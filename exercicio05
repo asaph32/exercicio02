@@ -1,0 +1,14 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    Scanner teclado = new Scanner (System.in);
+    System.out.println("Informe um numero :");
+    float num = teclado.nextFloat();
+    if(num > 0) {
+      System.out.println("informe um numero:");
+    } else {
+         System.out.println(" Programa encerrado!!");
+         
+    }
+  }
+}
