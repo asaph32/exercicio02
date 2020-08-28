@@ -1,0 +1,13 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    float troco;
+    Scanner teclado = new Scanner(System.in);
+    System.out.println("Informe o valor pago :");
+    float valorpago = teclado.nextFloat();
+    System.out.println("Informe o preço do produto:");
+    float preçodoproduto = teclado.nextFloat();
+    troco = valorpago - preçodoproduto;
+    System.out.println("O troco foi de : "+troco );
+  }
+}
