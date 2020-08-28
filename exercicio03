@@ -1,0 +1,19 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    float multa=0;
+    float pesoexcedente=0;
+    Scanner teclado = new Scanner (System.in);
+    System.out.println("Informe o peso do peixe(kg) :");
+    float pesopeixe = teclado.nextFloat();
+    if (pesopeixe >= 50) {
+      multa=pesopeixe*4;
+      pesoexcedente=pesopeixe-50;
+    }else {
+      pesoexcedente=0;
+      pesopeixe=0;
+    }
+    System.out.println("A multa foi de : "+multa);
+    System.out.println("O peso excedente foi de : "+pesoexcedente);
+  }
+}
