@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    double x1;
+    double x2;
+    float delta;
+   Scanner teclado = new Scanner (System.in);
+   System.out.println("Informe a : ");
+   float a = teclado.nextFloat();
+   System.out.println("Informe b : ");
+   float b = teclado.nextFloat();
+   System.out.println("Informe c ");
+   float c = teclado.nextFloat();
+   delta = b*b - 4*a*c;
+   x1=-b+Math.sqrt(delta)/2*a;
+   x2=-b-Math.sqrt(delta)/2*a;
+   System.out.println("O delta vale : "+delta);
+   System.out.println("O x1 vale : "+x1);
+   System.out.println("O x2 vale : "+x2);
+  }
+}
